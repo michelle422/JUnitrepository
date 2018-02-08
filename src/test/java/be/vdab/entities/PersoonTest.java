@@ -18,7 +18,7 @@ public class PersoonTest {
 	}
 	@Test(expected = IllegalArgumentException.class)
 	public void persoonMetTweeDezelfdeVoornamenIsVerkeerd() {
-		String[] voornamen = {"Allan", "Hans", "Allan", "Charles", "Hans"};
+		String[] voornamen = {"Allan", "Hans", "Allan"};
 		new Persoon(voornamen);
 	}
 	@Test(expected = IllegalArgumentException.class)
